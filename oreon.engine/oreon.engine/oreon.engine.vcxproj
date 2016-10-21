@@ -150,21 +150,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\OpenGLEngine\Matrix4f.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\OpenGLEngine\Vec2f.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\OpenGLEngine\Vec3f.cpp" />
     <ClCompile Include="CoreEngine.cpp" />
+    <ClCompile Include="Matrix4f.cpp" />
     <ClCompile Include="OpenGLDisplay.cpp" />
     <ClCompile Include="RenderingEngine.cpp" />
+    <ClCompile Include="Vec2f.cpp" />
+    <ClCompile Include="Vec3f.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\OpenGLEngine\Matrix4f.h" />
-    <ClInclude Include="..\..\..\..\Desktop\OpenGLEngine\Vec2f.h" />
-    <ClInclude Include="..\..\..\..\Desktop\OpenGLEngine\Vec3f.h" />
     <ClInclude Include="CoreEngine.h" />
+    <ClInclude Include="Matrix4f.h" />
     <ClInclude Include="OpenGLDisplay.h" />
     <ClInclude Include="RenderingEngine.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Vec2f.h" />
+    <ClInclude Include="Vec3f.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="oreon.engine.rc" />
