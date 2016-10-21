@@ -48,8 +48,14 @@
     <ClCompile Include="RenderingEngine.cpp">
       <Filter>Source Files\engine\window</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\OpenGLEngine\Camera.cpp">
-      <Filter>Source Files\engine\core</Filter>
+    <ClCompile Include="..\..\..\..\Desktop\OpenGLEngine\Matrix4f.cpp">
+      <Filter>Source Files\engine\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\OpenGLEngine\Vec2f.cpp">
+      <Filter>Source Files\engine\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\OpenGLEngine\Vec3f.cpp">
+      <Filter>Source Files\engine\math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -65,8 +71,14 @@
     <ClInclude Include="RenderingEngine.h">
       <Filter>Header Files\engine\window</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\OpenGLEngine\Camera.h">
-      <Filter>Header Files\engine\core</Filter>
+    <ClInclude Include="..\..\..\..\Desktop\OpenGLEngine\Vec3f.h">
+      <Filter>Header Files\engine\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\OpenGLEngine\Matrix4f.h">
+      <Filter>Header Files\engine\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\OpenGLEngine\Vec2f.h">
+      <Filter>Header Files\engine\math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

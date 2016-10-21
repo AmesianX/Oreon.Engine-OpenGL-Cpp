@@ -150,13 +150,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\OpenGLEngine\Camera.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\OpenGLEngine\Matrix4f.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\OpenGLEngine\Vec2f.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\OpenGLEngine\Vec3f.cpp" />
     <ClCompile Include="CoreEngine.cpp" />
     <ClCompile Include="OpenGLDisplay.cpp" />
     <ClCompile Include="RenderingEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\OpenGLEngine\Camera.h" />
+    <ClInclude Include="..\..\..\..\Desktop\OpenGLEngine\Matrix4f.h" />
+    <ClInclude Include="..\..\..\..\Desktop\OpenGLEngine\Vec2f.h" />
+    <ClInclude Include="..\..\..\..\Desktop\OpenGLEngine\Vec3f.h" />
     <ClInclude Include="CoreEngine.h" />
     <ClInclude Include="OpenGLDisplay.h" />
     <ClInclude Include="RenderingEngine.h" />
