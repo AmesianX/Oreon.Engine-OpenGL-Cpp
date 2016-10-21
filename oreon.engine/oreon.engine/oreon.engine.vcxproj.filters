@@ -48,13 +48,16 @@
     <ClCompile Include="RenderingEngine.cpp">
       <Filter>Source Files\engine\window</Filter>
     </ClCompile>
-    <ClCompile Include="Vec3f.cpp">
+    <ClCompile Include="engine\math\Quaternion.cpp">
       <Filter>Source Files\engine\math</Filter>
     </ClCompile>
-    <ClCompile Include="Matrix4f.cpp">
+    <ClCompile Include="engine\math\Vec2f.cpp">
       <Filter>Source Files\engine\math</Filter>
     </ClCompile>
-    <ClCompile Include="Vec2f.cpp">
+    <ClCompile Include="engine\math\Matrix4f.cpp">
+      <Filter>Source Files\engine\math</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\math\Vec3f.cpp">
       <Filter>Source Files\engine\math</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,13 +74,16 @@
     <ClInclude Include="RenderingEngine.h">
       <Filter>Header Files\engine\window</Filter>
     </ClInclude>
-    <ClInclude Include="Matrix4f.h">
+    <ClInclude Include="engine\math\Quaternion.h">
       <Filter>Header Files\engine\math</Filter>
     </ClInclude>
-    <ClInclude Include="Vec2f.h">
+    <ClInclude Include="engine\math\Vec2f.h">
       <Filter>Header Files\engine\math</Filter>
     </ClInclude>
-    <ClInclude Include="Vec3f.h">
+    <ClInclude Include="engine\math\Vec3f.h">
+      <Filter>Header Files\engine\math</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\math\Matrix4f.h">
       <Filter>Header Files\engine\math</Filter>
     </ClInclude>
   </ItemGroup>
