@@ -19,18 +19,6 @@
     <Filter Include="Header Files\engine">
       <UniqueIdentifier>{6aa59ce8-a725-4f5f-a841-02589d9637d2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\engine\window">
-      <UniqueIdentifier>{522ecc5d-1852-457e-a50e-a319dd3e4995}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\engine\window">
-      <UniqueIdentifier>{7c000828-8b26-4010-b416-44539c9310cf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\engine\core">
-      <UniqueIdentifier>{c8742b35-c051-4a26-8936-f4b7974a908a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\engine\core">
-      <UniqueIdentifier>{841e4321-0b13-4b79-b2db-d21d8e0397be}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\engine\math">
       <UniqueIdentifier>{d4e26fe1-8c28-40ce-9ed2-a65d2b166a2f}</UniqueIdentifier>
     </Filter>
@@ -39,15 +27,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CoreEngine.cpp">
-      <Filter>Source Files\engine\window</Filter>
-    </ClCompile>
-    <ClCompile Include="OpenGLDisplay.cpp">
-      <Filter>Source Files\engine\window</Filter>
-    </ClCompile>
-    <ClCompile Include="RenderingEngine.cpp">
-      <Filter>Source Files\engine\window</Filter>
-    </ClCompile>
     <ClCompile Include="engine\math\Quaternion.cpp">
       <Filter>Source Files\engine\math</Filter>
     </ClCompile>
@@ -64,15 +43,6 @@
   <ItemGroup>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CoreEngine.h">
-      <Filter>Header Files\engine\window</Filter>
-    </ClInclude>
-    <ClInclude Include="OpenGLDisplay.h">
-      <Filter>Header Files\engine\window</Filter>
-    </ClInclude>
-    <ClInclude Include="RenderingEngine.h">
-      <Filter>Header Files\engine\window</Filter>
     </ClInclude>
     <ClInclude Include="engine\math\Quaternion.h">
       <Filter>Header Files\engine\math</Filter>
