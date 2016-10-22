@@ -157,7 +157,6 @@
     <ClCompile Include="engine\math\Vec3f.cpp" />
     <ClCompile Include="OpenGLDisplay.cpp" />
     <ClCompile Include="RenderingEngine.cpp" />
-    <ClCompile Include="test\test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CoreEngine.h" />
