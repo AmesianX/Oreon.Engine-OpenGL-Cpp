@@ -1,1 +1,1 @@
-# Oreon.Engine-OpenGL-C++
+# Oreon Engine OpenGL/C++
