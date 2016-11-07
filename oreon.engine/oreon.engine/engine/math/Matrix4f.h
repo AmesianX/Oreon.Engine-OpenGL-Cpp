@@ -2,6 +2,7 @@
 
 #include "Vec3f.h"
 #include "Quaternion.h"
+#include <iostream>
 
 class Matrix4f {
 

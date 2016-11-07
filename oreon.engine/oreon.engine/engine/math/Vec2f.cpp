@@ -1,6 +1,4 @@
 #include "Vec2f.h"
-#include <boost/log/trivial.hpp>
-
 
 Vec2f::Vec2f() : x(0), y(0)
 {
@@ -93,6 +91,4 @@ void Vec2f::setY(float y) {
 
 void Vec2f::toString() const
 {
-	BOOST_LOG_TRIVIAL(debug) <<	"|" + std::to_string(getX()) + " " + std::to_string(getY()) + "|"; 
-
 }

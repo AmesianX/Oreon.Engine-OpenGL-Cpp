@@ -1,5 +1,6 @@
 #pragma once
 
+#include <math.h>
 
 class Vec2f {
 

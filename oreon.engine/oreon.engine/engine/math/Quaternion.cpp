@@ -1,5 +1,4 @@
 #include "Quaternion.h"
-#include <boost/log/trivial.hpp>
 
 
 Quaternion::Quaternion() : x(0), y(0), z(0), w(0)
@@ -90,6 +89,5 @@ void Quaternion::setW(float w) {
 
 void Quaternion::toString() const
 {
-	BOOST_LOG_TRIVIAL(debug) <<	"|" + std::to_string(getX()) + " " + std::to_string(getY()) + " " + std::to_string(getZ()) + " " + std::to_string(getW()) + "|"; 
 
 }

@@ -1,5 +1,5 @@
 #include "Matrix4f.h"
-#include "Camera.h"
+#include <engine\core\Camera.h>
 
 #define PI 3.14159265358979323846
 
@@ -65,7 +65,7 @@ Matrix4f Matrix4f::Rotation(const Vec3f &rotation)
 	
 
 		Matrix4f temp = rz.mul(ry.mul(rx));
-
+		
 		std::memcpy(m,temp.m, 16 * sizeof(float));
 		
 		return *this;
@@ -148,9 +148,5 @@ void Matrix4f::set(int x, int y, float value)
 
 void Matrix4f::toString() const
 {
-	BOOST_LOG_TRIVIAL(debug) << 	
-			"|" + std::to_string(m[0][0]) + " " + std::to_string(m[0][1]) + " " + std::to_string(m[0][2]) + " " + std::to_string(m[0][3]) + "|\n" +
-			"|" + std::to_string(m[1][0]) + " " + std::to_string(m[1][1]) + " " + std::to_string(m[1][2]) + " " + std::to_string(m[1][3]) + "|\n" +
-			"|" + std::to_string(m[2][0]) + " " + std::to_string(m[2][1]) + " " + std::to_string(m[2][2]) + " " + std::to_string(m[2][3]) + "|\n" +
-			"|" + std::to_string(m[3][0]) + " " + std::to_string(m[3][1]) + " " + std::to_string(m[3][2]) + " " + std::to_string(m[3][3]) + "|\n" ;
+	
 }

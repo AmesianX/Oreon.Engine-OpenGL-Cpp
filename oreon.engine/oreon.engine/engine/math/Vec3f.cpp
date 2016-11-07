@@ -1,7 +1,5 @@
 #include "Vec3f.h"
 #include "Quaternion.h"
-#include <boost/log/trivial.hpp>
-
 
 #define PI 3.14159265358979323846
 
@@ -149,8 +147,6 @@ void Vec3f::setZ(float z)
 
 void Vec3f::toString() const
 {
-	BOOST_LOG_TRIVIAL(debug) <<	"|" + std::to_string(getX()) + " " + std::to_string(getY()) + " " + std::to_string(getZ()) + "|"; 
-
 }
 	
 	

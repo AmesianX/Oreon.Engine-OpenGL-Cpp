@@ -69,13 +69,19 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\oreon.engine;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\oreon.engine;$(IncludePath)</IncludePath>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\oreon.engine;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\oreon.engine;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -100,12 +106,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glew-2.0.0\include;$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\SOIL\include;$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glfw-3.2.1.bin.WIN64\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glew-2.0.0\include;$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\SOIL\include;$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glfw-3.2.1.bin.WIN64\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glew-2.0.0\lib\Release\Win64;$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\SOIL\lib;$(HOMEPATH)\git\Fynn\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glfw-3.2.1.bin.WIN64\lib-vc2015</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glew-2.0.0\lib\Release\x64;$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\SOIL\lib;$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glfw-3.2.1.bin.WIN64\lib-vc2015</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glu32.lib;SOIL.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -138,24 +144,36 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glew-2.0.0\include;$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\SOIL\include;$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glfw-3.2.1.bin.WIN64\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glew-2.0.0\include;$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\SOIL\include;$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glfw-3.2.1.bin.WIN64\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glew-2.0.0\lib\Release\Win64;$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\SOIL\lib;$(HOMEPATH)\git\Fynn\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glfw-3.2.1.bin.WIN64\lib-vc2015</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glew-2.0.0\lib\Release\x64;$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\SOIL\lib;$(HOMEDRIVE)$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glfw-3.2.1.bin.WIN64\lib-vc2015</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glu32.lib;SOIL.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="engine\core\Camera.cpp" />
+    <ClCompile Include="engine\core\Input.cpp" />
+    <ClCompile Include="engine\core\Window.cpp" />
+    <ClCompile Include="engine\main\CoreEngine.cpp" />
+    <ClCompile Include="engine\main\Game.cpp" />
+    <ClCompile Include="engine\main\RenderingEngine.cpp" />
     <ClCompile Include="engine\math\Matrix4f.cpp" />
     <ClCompile Include="engine\math\Quaternion.cpp" />
     <ClCompile Include="engine\math\Vec2f.cpp" />
     <ClCompile Include="engine\math\Vec3f.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="engine\core\Camera.h" />
+    <ClInclude Include="engine\core\Input.h" />
+    <ClInclude Include="engine\core\Window.h" />
+    <ClInclude Include="engine\main\CoreEngine.h" />
+    <ClInclude Include="engine\main\Game.h" />
+    <ClInclude Include="engine\main\RenderingEngine.h" />
     <ClInclude Include="engine\math\Matrix4f.h" />
     <ClInclude Include="engine\math\Quaternion.h" />
     <ClInclude Include="engine\math\Vec2f.h" />
