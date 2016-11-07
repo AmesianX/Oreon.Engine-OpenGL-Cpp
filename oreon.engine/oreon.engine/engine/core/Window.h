@@ -16,7 +16,6 @@ public:
 
 
 private:
-	Window();
 	static Window instance;
 	GLFWwindow* window;
 	int width;

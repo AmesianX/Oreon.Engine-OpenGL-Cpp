@@ -166,6 +166,7 @@
     <ClCompile Include="engine\math\Quaternion.cpp" />
     <ClCompile Include="engine\math\Vec2f.cpp" />
     <ClCompile Include="engine\math\Vec3f.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="engine\core\Camera.h" />

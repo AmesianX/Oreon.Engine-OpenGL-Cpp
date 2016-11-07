@@ -4,9 +4,7 @@ using namespace std::chrono_literals;
 
 int CoreEngine::fps;
 
-CoreEngine::CoreEngine() {
-
-}
+CoreEngine::CoreEngine() {}
 
 void CoreEngine::createWindow(int width, int height, char* title) {
 	Window::getInstance().create(width,height,title);
@@ -35,6 +33,7 @@ void CoreEngine::run() {
 	// Rendering Loop
 	while (isRunning)
 	{
+		bool renderFrame = false;
 
 		auto startTime = std::chrono::high_resolution_clock::now();
 		long passedTime = (startTime - lastTime).count();
@@ -46,6 +45,7 @@ void CoreEngine::run() {
 
 		while (unprocessedTime > frametime)
 		{
+			renderFrame = true;
 			unprocessedTime -= frametime;
 
 			if (glfwWindowShouldClose(Window::getInstance().getWindow()) == 1)
@@ -60,7 +60,7 @@ void CoreEngine::run() {
 				frameCounter = 0;
 			}
 		}
-		if (render)
+		if (renderFrame)
 		{
 			render();
 			frames++;
