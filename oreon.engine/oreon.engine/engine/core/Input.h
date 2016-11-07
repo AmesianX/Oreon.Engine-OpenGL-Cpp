@@ -2,7 +2,6 @@
 
 #include <engine\math\Vec2f.h>
 #include <vector>
-#include <GLFW\glfw3.h>
 
 class Input
 {

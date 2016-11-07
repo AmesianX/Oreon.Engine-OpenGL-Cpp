@@ -3,8 +3,6 @@
 #include <engine\math\Matrix4f.h>
 #include <engine\math\Vec3f.h>
 #include <engine\math\Vec2f.h>
-#include <GLFW\glfw3.h>
-
 
 class Camera{
 
