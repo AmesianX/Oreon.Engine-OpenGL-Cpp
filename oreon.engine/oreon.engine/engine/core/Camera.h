@@ -13,6 +13,7 @@ public:
 	void move(Vec3f &dir, float amount);
 	void rotateY(float angle);
 	void rotateX(float angle);
+
 	int getScaleFactor() const;
 	Matrix4f getProjectionViewMatrix();
 	void setProjection(float fovy, float width, float height, float zNear, float zFar);

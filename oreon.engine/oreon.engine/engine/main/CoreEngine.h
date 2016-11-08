@@ -10,6 +10,7 @@ public:
 	void createWindow(int width,int height, char* title);
 	void init();
 	void start();
+	static int getFps();
 
 private:
 	void run();
@@ -20,5 +21,4 @@ private:
 	static int fps;
 	float frametime;
 	bool isRunning;
-	static int getFps();
 };

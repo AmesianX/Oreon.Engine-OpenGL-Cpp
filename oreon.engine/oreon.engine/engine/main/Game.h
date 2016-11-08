@@ -5,12 +5,11 @@
 class Game {
 
 public:
-	Game(int width, int height, const char* title);
+	Game();
 	void launch();
 	void init();
-
+	CoreEngine getEngine();
 
 private:
 	CoreEngine engine;
-	CoreEngine getEngine();
 };

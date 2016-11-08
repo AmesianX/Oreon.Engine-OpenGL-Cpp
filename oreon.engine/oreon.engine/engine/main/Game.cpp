@@ -1,6 +1,6 @@
 #include "Game.h"
 
-Game::Game(int width, int height, const char* title) : engine(CoreEngine()){
+Game::Game() : engine(CoreEngine()){
 }
 
 void Game::launch() {

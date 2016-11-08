@@ -93,3 +93,7 @@ void CoreEngine::cleanUp() {
 
 }
 
+int CoreEngine::getFps() {
+	return fps;
+}
+
