@@ -1,6 +1,7 @@
 #pragma once
 
 #include <engine\core\Window.h>
+#include <engine\core\InputHandler.h>
 #include <thread>
 
 class CoreEngine {

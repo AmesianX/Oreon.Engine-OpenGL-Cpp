@@ -22,90 +22,54 @@
     <Filter Include="Header Files\engine\math">
       <UniqueIdentifier>{d4e26fe1-8c28-40ce-9ed2-a65d2b166a2f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\engine\math">
-      <UniqueIdentifier>{1466f2d5-7bd5-4b7c-8081-3290524de5f8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\engine\main">
-      <UniqueIdentifier>{6958b324-d21f-485a-b637-151e64440e49}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\engine\main">
-      <UniqueIdentifier>{0acd6fb9-41e7-40dd-a255-74e1062c6037}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\engine\core">
       <UniqueIdentifier>{b31df769-805b-4bc9-91dd-bdcaa465df49}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\engine\core">
       <UniqueIdentifier>{85a5e0d7-bf7d-4f2d-b104-7ae0bcb42f91}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\engine\math">
+      <UniqueIdentifier>{5144198f-2514-4447-a83f-bff9755afe4f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="engine\math\Quaternion.cpp">
-      <Filter>Source Files\engine\math</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\math\Vec2f.cpp">
-      <Filter>Source Files\engine\math</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\math\Matrix4f.cpp">
-      <Filter>Source Files\engine\math</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\math\Vec3f.cpp">
-      <Filter>Source Files\engine\math</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\core\Camera.cpp">
-      <Filter>Source Files\engine\core</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\main\CoreEngine.cpp">
-      <Filter>Source Files\engine\main</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\main\RenderingEngine.cpp">
-      <Filter>Source Files\engine\main</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\core\Input.cpp">
-      <Filter>Source Files\engine\core</Filter>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\engine</Filter>
     </ClCompile>
     <ClCompile Include="engine\core\Window.cpp">
       <Filter>Source Files\engine\core</Filter>
     </ClCompile>
-    <ClCompile Include="engine\main\Game.cpp">
-      <Filter>Source Files\engine\main</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="engine\CoreEngine.cpp">
       <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Game.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\math\Vec2f.cpp">
+      <Filter>Source Files\engine\math</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\core\InputHandler.cpp">
+      <Filter>Source Files\engine\core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="engine\math\Quaternion.h">
-      <Filter>Header Files\engine\math</Filter>
+    <ClInclude Include="engine\core\Window.h">
+      <Filter>Header Files\engine\core</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\CoreEngine.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Game.h">
+      <Filter>Header Files\engine</Filter>
     </ClInclude>
     <ClInclude Include="engine\math\Vec2f.h">
       <Filter>Header Files\engine\math</Filter>
     </ClInclude>
-    <ClInclude Include="engine\math\Vec3f.h">
-      <Filter>Header Files\engine\math</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\math\Matrix4f.h">
-      <Filter>Header Files\engine\math</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\core\Camera.h">
+    <ClInclude Include="engine\core\InputHandler.h">
       <Filter>Header Files\engine\core</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\main\CoreEngine.h">
-      <Filter>Header Files\engine\main</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\main\RenderingEngine.h">
-      <Filter>Header Files\engine\main</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\core\Input.h">
-      <Filter>Header Files\engine\core</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\core\Window.h">
-      <Filter>Header Files\engine\core</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\main\Game.h">
-      <Filter>Header Files\engine\main</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

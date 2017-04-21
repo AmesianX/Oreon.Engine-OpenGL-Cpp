@@ -96,7 +96,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glfw-3.2.1.bin.WIN32\lib-vc2015;$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glew-2.0.0\lib\Release\Win32;$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\SOIL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32s.lib;glfw3.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -132,7 +132,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glfw-3.2.1.bin.WIN32\lib-vc2015;$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\glew-2.0.0\lib\Release\Win32;$(HOMEPATH)\git\Oreon.Engine-OpenGL-Cpp\oreon.engine\lib\SOIL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32s.lib;glfw3.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -156,29 +156,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="engine\core\Camera.cpp" />
-    <ClCompile Include="engine\core\Input.cpp" />
+    <ClCompile Include="engine\CoreEngine.cpp" />
+    <ClCompile Include="engine\core\InputHandler.cpp" />
     <ClCompile Include="engine\core\Window.cpp" />
-    <ClCompile Include="engine\main\CoreEngine.cpp" />
-    <ClCompile Include="engine\main\Game.cpp" />
-    <ClCompile Include="engine\main\RenderingEngine.cpp" />
-    <ClCompile Include="engine\math\Matrix4f.cpp" />
-    <ClCompile Include="engine\math\Quaternion.cpp" />
+    <ClCompile Include="engine\Game.cpp" />
     <ClCompile Include="engine\math\Vec2f.cpp" />
-    <ClCompile Include="engine\math\Vec3f.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="engine\core\Camera.h" />
-    <ClInclude Include="engine\core\Input.h" />
+    <ClInclude Include="engine\CoreEngine.h" />
+    <ClInclude Include="engine\core\InputHandler.h" />
     <ClInclude Include="engine\core\Window.h" />
-    <ClInclude Include="engine\main\CoreEngine.h" />
-    <ClInclude Include="engine\main\Game.h" />
-    <ClInclude Include="engine\main\RenderingEngine.h" />
-    <ClInclude Include="engine\math\Matrix4f.h" />
-    <ClInclude Include="engine\math\Quaternion.h" />
+    <ClInclude Include="engine\Game.h" />
     <ClInclude Include="engine\math\Vec2f.h" />
-    <ClInclude Include="engine\math\Vec3f.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
