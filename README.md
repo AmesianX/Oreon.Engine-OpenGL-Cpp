@@ -1,3 +1,3 @@
 # Oreon Engine OpenGL/C++
 
-## In progress...
+## A simple template with OpenGL Window, Rendering Loop, Inputhandler and Linear Algebra lib
