@@ -50,6 +50,6 @@ int main() {
 	//return EXIT_SUCCESS;
 
 	Game test = Game();
-	test.getEngine().createWindow(400, 400, "test");
+	test.getEngine().createWindow(400, 400, "OpenGL template");
 	test.launch();
 }
